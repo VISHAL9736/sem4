@@ -22,7 +22,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Set up JDK 21.0.2
-    path: Users/User1/github-runners/runner
       uses: actions/setup-java@v4
       with:
         java-version: '21.0.2'
