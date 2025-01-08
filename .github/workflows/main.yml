@@ -1,3 +1,9 @@
-html:
-  tag: "div"
-  content: "Hello, World!"
+import yaml
+
+# Load the YAML file
+with open("hello.yml", "r") as file:
+    data = yaml.safe_load(file)
+
+# Generate HTML
+html = f"<{data['html']['tag']}>{data['html']['content']}</{data['html']['tag']}>"
+print(html)
